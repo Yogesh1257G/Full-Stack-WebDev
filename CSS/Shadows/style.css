@@ -1,0 +1,20 @@
+div{
+    font-size: 100px;
+
+    /* box-shadow: h-offset v-offset blur spread color; */
+    box-shadow: 5px 5px 20px 10px limegreen;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 2px solid burlywood;
+
+    /* text-shadow: h-offset v-offset blur color; */
+    text-shadow: 20px 10px 15px peru;
+}
+
+span{
+    box-shadow: inset 5px 5px 2px 2px lightcoral;
+    margin-top: 40px;
+    padding: 10px;
+    border: 2px dotted black;
+    box-sizing: border-box;
+}

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.white {
+  background: gray;
+}
+
+button:hover {
+  opacity: 0.8;
+}

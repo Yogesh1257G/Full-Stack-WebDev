@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors</title>
+    <style>
+        .box{
+            background-color:cornflowerblue;
+        }
+        
+        .boxes::first-line{
+            color: blue;
+        }
+
+        [data-info="hi"]{
+            background-color:darkcyan;
+        }
+
+        .boxes:nth-child(odd){
+            font-style: oblique;
+        }
+
+        .box::before{
+            content: "Hi There !!";
+            color:chartreuse;
+        }
+
+        ::selection{
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        .boxes::first-letter{
+            font-size: 45px;
+            color: darkorchid;
+        }
+
+        input::placeholder{
+            color: darkslateblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div data-info="hi" class="boxes">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae eaque fuga inventore temporibus deleniti. Fugit possimus doloremque eum culpa. Id aliquid modi cupiditate.</div>
+        <div class="boxes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui nihil architecto illum asperiores natus nobis voluptate ad quibusdam earum vero quo consequuntur eaque commodi maiores sint rerum, itaque alias?</div>
+        <div class="boxes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quidem ex dolorum delectus eos animi quae praesentium qui officia, enim totam excepturi, in deserunt fugit aut repellat cupiditate voluptatibus sed odit! Illum, tempore ut?</div>
+        <input type="text" placeholder="!!Enter Text Here!!">
+    </div>
+</body>
+</html>

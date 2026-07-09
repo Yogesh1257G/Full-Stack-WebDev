@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#f3f4f8;
+    color:#2f2f33;
+}
+
+.container{
+    width:80%;
+    max-width:1280px;
+    margin:auto;
+}
+
+header{
+    background:#fff;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.navbar{
+    height:90px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:800;
+    color:#3164df;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#2f2f33;
+    font-size:1.1rem;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:15px 32px;
+    border-radius:6px;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.primary{
+    background:#3164df;
+    color:#fff;
+}
+
+.primary:hover{
+    background:#2855c5;
+}
+
+.secondary{
+    border:1px solid #d1d5db;
+    color:#2f2f33;
+    background:#fff;
+}
+
+.secondary:hover{
+    background:#f5f5f5;
+}
+
+.hero{
+    padding:90px 0 120px;
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.hero-text h1{
+    font-size:4.2rem;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:35px;
+}
+
+.hero-text p{
+    font-size:1.5rem;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:18px;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:24px;
+    display:block;
+}
+
+.features,
+.showcase,
+.testimonials,
+.pricing{
+    padding:80px 0;
+}
+
+.features h2,
+.showcase h2,
+.testimonials h2,
+.pricing h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:50px;
+}
+
+.feature-grid,
+.testimonial-grid,
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.feature-card,
+.testimonial-card,
+.pricing-card{
+    background:#fff;
+    border-radius:18px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 6px 18px rgba(0,0,0,.1);
+}
+
+.feature-card h3{
+    font-size:2rem;
+    margin-bottom:12px;
+}
+
+.feature-card p{
+    font-size:1.3rem;
+}
+
+.showcase-image img{
+    width:100%;
+    border-radius:20px;
+    display:block;
+}
+
+.testimonial-card{
+    text-align:left;
+}
+
+.testimonial-card p{
+    font-size:1.5rem;
+    margin-bottom:12px;
+}
+
+.testimonial-card h4{
+    font-size:1.7rem;
+    font-weight:700;
+}
+
+.pricing-card h3{
+    font-size:2.2rem;
+    margin-bottom:25px;
+}
+
+.price{
+    font-size:4rem;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.pricing-card span{
+    display:block;
+    font-size:1.5rem;
+    margin-bottom:30px;
+}
+
+.pricing-card ul{
+    list-style:none;
+    margin-bottom:35px;
+}
+
+.pricing-card li{
+    font-size:1.5rem;
+    margin:15px 0;
+}
+
+.cta{
+    background:#3164df;
+    color:#fff;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.cta h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.cta p{
+    font-size:1.4rem;
+    margin-bottom:35px;
+}
+
+.light{
+    background:#fff;
+    color:#3164df;
+}
+
+footer{
+    background:#07142d;
+    color:#fff;
+    text-align:center;
+    padding:35px 20px;
+    font-size:1.3rem;
+}
+
+@media(max-width:768px){
+
+    .hero-content,
+    .feature-grid,
+    .testimonial-grid,
+    .pricing-grid{
+        grid-template-columns:1fr;
+    }
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        gap:20px;
+        padding:20px 0;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-text h1{
+        font-size:3rem;
+    }
+
+    .container{
+        width:90%;
+    }
+}

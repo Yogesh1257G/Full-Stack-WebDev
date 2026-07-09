@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background:#f8f5ee;
+    color:#333;
+}
+.hero{
+    height:80vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)),
+    url("https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero h1{
+    font-family:'Merriweather',serif;
+    font-size:4rem;
+    margin:20px 0;
+}
+
+.hero p{
+    line-height:1.7;
+}
+
+button{
+    margin-top:30px;
+    padding:12px 28px;
+    border:none;
+    background:#2e7d32;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+section{
+    padding:70px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-family:'Merriweather',serif;
+    color:#2e7d32;
+}
+.team-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.team{
+    background:white;
+    padding:20px 40px;
+    border-left:5px solid #2e7d32;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#2e7d32;
+    color:white;
+}
+
+th,td{
+    padding:15px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f4f4f4;
+}
+
+.leader{
+    background:#fff3cd;
+    font-weight:bold;
+}
+.sponsors{
+    padding:70px 10%;
+    text-align:center;
+    background:#fdfaf4;
+}
+
+.sponsors h2{
+    font-family:'Merriweather',serif;
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.sponsor-text{
+    color:#666;
+    max-width:700px;
+    margin:0 auto 40px;
+    line-height:1.7;
+}
+
+.sponsor-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.sponsor-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.sponsor-card:hover{
+    transform:translateY(-6px);
+}
+
+.sponsor-card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.sponsor-card h3{
+    margin-top:15px;
+    color:#2e7d32;
+}
+footer{
+    text-align:center;
+    padding:25px;
+    background:#2e7d32;
+    color:white;
+}
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+}

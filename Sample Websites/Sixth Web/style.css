@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f7f3ee;
+    color:#333;
+}
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    min-height:100vh;
+}
+
+.hero-text{
+    padding:100px 10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero-text span{
+    letter-spacing:3px;
+    color:#8b6f47;
+}
+
+.hero-text h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:5rem;
+    margin:20px 0;
+}
+
+.hero-text p{
+    line-height:1.8;
+    color:#666;
+    margin-bottom:40px;
+}
+
+.btn{
+    width:fit-content;
+    text-decoration:none;
+    color:white;
+    background:#8b6f47;
+    padding:15px 30px;
+    border-radius:50px;
+}
+
+.hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.section-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-heading p{
+    color:#8b6f47;
+    letter-spacing:2px;
+}
+
+.section-heading h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+}
+.listings,
+.agents,
+.contact{
+    padding:90px 10%;
+}
+
+.property-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+}
+
+.property-card{
+    background:white;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.property-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.property-info{
+    padding:25px;
+}
+
+.price{
+    color:#8b6f47;
+    font-weight:600;
+}
+
+.property-info h3{
+    margin:15px 0;
+}
+
+.property-info p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.property-info a{
+    color:#8b6f47;
+    text-decoration:none;
+}
+.agent-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.agent-card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.agent-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.agent-card span{
+    color:#8b6f47;
+}
+
+.agent-card p{
+    margin-top:15px;
+    color:#666;
+}
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.contact-box p{
+    margin:20px 0 40px;
+    color:#666;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+button{
+    border:none;
+    padding:15px;
+    background:#8b6f47;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+footer{
+    background:#2d2d2d;
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+footer h3{
+    font-family:'Cormorant Garamond',serif;
+}
+@media(max-width:768px){
+
+    .hero{
+        grid-template-columns:1fr;
+    }
+
+    .hero-text h1{
+        font-size:3.5rem;
+    }
+
+    .hero-image{
+        height:400px;
+    }
+}

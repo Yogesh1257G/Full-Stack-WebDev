@@ -1,0 +1,7 @@
+div ul li{
+    font-size: 32px;
+    list-style: devanagari;
+    background-color: chocolate;
+    list-style-position: inside;
+    list-style-image: url("https://images.hdqwalls.com/download/one-piece-monkey-d-luffy-4k-56-1680x1050.jpg");
+}

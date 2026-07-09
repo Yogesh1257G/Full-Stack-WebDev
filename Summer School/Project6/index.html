@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simple Interest Calculator</h1>
+
+        <input type="number" id="principal" placeholder="Enter Principal Amount">
+
+        <input type="number" id="rate" placeholder="Enter Rate (%)">
+
+        <input type="number" id="time" placeholder="Enter Time (Years)">
+
+        <button onclick="calculateSI()">Calculate</button>
+
+        <div class="result">
+            <p id="si">Simple Interest: ₹0</p>
+            <p id="total">Total Amount: ₹0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

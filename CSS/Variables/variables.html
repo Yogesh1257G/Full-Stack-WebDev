@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root{
+            --defop:0.7;
+            --bgcolor:rgb(70, 254, 125);
+            --color:rgb(0, 152, 0);
+        }
+
+        div{
+            background-color: var(--color);
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            list-style: none;
+            opacity: var(--defop);
+            font-size: 32px;
+            border: 2px solid black;
+            background-color: var(--bgcolor);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quaerat ipsa quisquam recusandae cum fugit, exercitationem iure excepturi, eius possimus soluta voluptatibus dolores! Quaerat, reiciendis soluta! Deserunt dolore reiciendis dolor non officia repudiandae molestias, recusandae quia, soluta harum eaque. Eveniet sint provident enim corrupti necessitatibus.
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.card{
+    background-color: black;
+    color: white;
+}
+.imgBox{
+    position:relative;
+
+}
+.imgText h4{
+    position: absolute;
+    padding: 3px;
+    bottom: 0;
+    z-index: 10;
+    right: 5px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.text{
+    margin: 20px 0px 0px 5px;
+    align-items: center;
+    justify-content: center;
+}
+.smallText{
+    margin-top: 10px;
+}

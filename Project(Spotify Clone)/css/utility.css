@@ -1,0 +1,10 @@
+.filter{
+    filter: invert(1);
+}
+.bg-black{
+    background-color: black;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}

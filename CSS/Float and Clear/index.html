@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <style>
+        .box {
+            border: 2px, solid, black;
+            display: flow-root;
+        }
+
+        img{
+            float: left;
+        }
+
+        .boxes {
+            border: 2px, solid, red;
+        }
+        .boxes:nth-child(3){
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="boxes">
+            <img src="https://wallpaperaccess.com/full/881033.jpg" width="250px">
+        </div>
+        <div class="boxes">
+            <p1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque similique corrupti quisquam
+                officiis tenetur molestias non ipsam voluptatibus! Voluptas magni quisquam blanditiis.
+            </p1>
+        </div>
+        <div class="boxes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias porro nam corrupti
+            eos facere, ipsa voluptates laboriosam accusamus nesciunt illum saepe! Aut ipsum eum eius vero pariatur
+            impedit, nihil recusandae nulla et fugiat.</div>
+    </div>
+</body>
+
+</html>
