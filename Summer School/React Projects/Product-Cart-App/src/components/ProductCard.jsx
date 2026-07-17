@@ -1,1 +1,3 @@
-export default function X(){return null}
+export default function X() {
+  return null;
+}

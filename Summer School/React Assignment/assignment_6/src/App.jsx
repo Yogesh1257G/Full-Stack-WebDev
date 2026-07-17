@@ -2,23 +2,18 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  // ---------------- Task 2 ----------------
   const [count, setCount] = useState(0);
 
-  // ---------------- Task 3 ----------------
   const [users, setUsers] = useState([]);
 
-  // ---------------- Task 1 ----------------
   useEffect(() => {
     console.log("Component Loaded Successfully!");
   }, []);
 
-  // ---------------- Task 2 ----------------
   useEffect(() => {
     document.title = `Count: ${count}`;
   }, [count]);
 
-  // ---------------- Task 3 ----------------
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
@@ -30,7 +25,6 @@ function App() {
     <div className="container">
       <h1>React useEffect Assignment</h1>
 
-      {/* Task 2 */}
       <div className="card">
         <h2>Counter</h2>
 
@@ -45,7 +39,6 @@ function App() {
         </button>
       </div>
 
-      {/* Task 3 */}
       <div className="card">
         <h2>User List</h2>
 
